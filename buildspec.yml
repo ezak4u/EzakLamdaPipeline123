@@ -13,8 +13,7 @@ phases:
       - mvn clean compile test
   build:
     commands:
-      - echo Build started on `date`
-      - mvn sonar:sonar
+      - echo Build started on `date`      
       - mvn package shade:shade
       - mv target/HelloWorld-1.0.jar .
       - unzip HelloWorld-1.0.jar
